@@ -1,5 +1,8 @@
 # jax-ws-demo
 
+* JAX-WS – Java API for XML Web Services
+* Contract Last example generating a JAX-WS Soap service. WSDL generated and found at: http://localhost:8090/users?WSDL
+
 #### UserService.java
 ```
 import javax.jws.WebMethod;
@@ -79,3 +82,18 @@ public class APIClient {
 
 }
 ```
+
+#### Testing - SOAP Request
+```
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <login xmlns="http://ws.naresh.com/">
+         <email>naresh@gmail.com</email>
+         <password>pass123</password>
+      </login>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+####
