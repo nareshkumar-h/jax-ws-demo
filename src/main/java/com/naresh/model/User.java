@@ -1,21 +1,11 @@
 package com.naresh.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name="user")
 public class User {
 
-	@XmlElement
 	private Integer id;
 	
-	@XmlElement
 	private String name;
 	
-	@XmlElement
 	private String email;
 	
 	@Override
@@ -23,7 +13,6 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + "]";
 	}
 
-	@XmlElement
 	private String password;
 
 	public Integer getId() {
