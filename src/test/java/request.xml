@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <login xmlns="http://ws.naresh.com/">
+         <email>naresh@gmail.com</email>
+         <password>pass123</password>
+      </login>
+   </soapenv:Body>
+</soapenv:Envelope>
